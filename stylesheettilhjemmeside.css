@@ -1,0 +1,365 @@
+html {
+  height: 100vh;
+  background-image: url(billedertilhjemmeside/Landingpagebaggrund2.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: ff-enzo-web, sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-family: lemongrass-script, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.content .btn{
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe,#ff77cd);
+  border-radius: 75px;
+  padding: 15px 35px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 3px 8px 20px rgba(94,28,68,0.25)
+}
+
+/* dette er det der viser navigationen */
+.navbar{
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  flex: 1;
+  padding-left: 0px;
+}
+
+#navul{
+  display:flex;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 25px;
+  padding: 0px 20px;
+}
+
+nav ul li:hover{
+  background: linear-gradient(45deg, #e0ffff,#add8e6);
+  border-radius: 150px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 3px 8px 20px rgba(94,28,68,0.25)
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 35px;
+}
+
+/* logoet, her kan jeg jurstere størrelsen på det. */
+.logo{
+  width: 400px;
+  cursor: pointer;
+}
+
+.imdb{
+  width: 50px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.instagram{
+  width: 50px;
+  cursor: pointer;
+  padding: 5px;
+}
+.container{
+  height: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* det er welcome teksten */
+.content h1{
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Det er underteksten under welcome */
+.content p{
+    font-size: 30px;
+    color: #000;
+}
+
+.content{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+/* Det er underteksten under welcome */
+.content2 p{
+    font-size: 30px;
+    color: #000;
+}
+
+.content2 {
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.maincontact{
+  margin-left: 10%;
+  margin-right: 20%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.kategorier h1{
+  font-size: 40px;
+  font-weight: 100px;
+}
+
+.kategorier p{
+  font-size: 16px;
+  line-height: 1;
+}
+
+.Aboutcontent p{
+  font-size: 40px;
+  font-weight: 100px;
+  line-height: 1.5;
+}
+
+.content2 h1{
+  font-size: 70px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.contactinfo{
+  align-self: flex-start;
+}
+
+.contactinfo p{
+  font-size: 30px;
+  font-weight: 100px;
+}
+
+/* beholderen til indhold i kategorier */
+.showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+/* her kommer den main som er det egentlige
+indhold til hjemmesiden */
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kategorier{
+  width: 80%;
+  height: auto;
+  border-width: 3px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.showcase-poster {
+  width: 50%;
+  align-items: center;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  height:auto;
+}
+
+.showcase-poster img {
+  width: 90%;
+  align-self: center;
+}
+
+.showcase-item-photo {
+  width: 33.33%;
+  align-items: center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-item-photo > img {
+  width: 90%;
+  align-self: center;
+}
+
+.showcase-item-photo > p{
+  height: 1rem;
+}
+
+.showcase-item-animation {
+  width: 100%;
+  align-items: center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Sprite {
+  width: 500px;
+  height: 500px;
+  background: url('AnimationsJellyfish.png') 0 0 no-repeat;
+  background-size: 3500px 500px;
+  animation: play 1.5s steps(7) infinite;
+}
+@keyframes play {
+  0%{background-position:0px;}
+  100% {background-position:-3500px;}
+}
+
+.showcase-item-video{
+  width: 100%;
+  align-items: center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-item-video > video {
+  width: 90%;
+  align-self: center;
+}
+
+.showcase-item-about {
+  width: 33.33%;
+  align-items: center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-item-about > img {
+  width: 90%;
+  align-self: center;
+}
+
+
+
+
+.showcase-item-icon {
+  width: 100%;
+  align-items:center;
+  padding: 5px 0px;
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  margin-bottom: 5%;
+}
+
+.showcase-item-icon > img {
+  width: auto;
+  height: auto;
+  align-self: center;
+}
+
+
+
+/* @media queries */
+
+/* tablet */
+@media (max-width: 768px){
+  .navbar{
+  flex-direction: column;
+  height: auto;
+  }
+
+  #navul {
+    padding: 0;
+  }
+
+  #navul li{
+    padding: 0px 0rem;
+  }
+
+  .Sprite {
+    width: 500px;
+    height: 500px;
+    background-size: 3500px 500px;
+    animation: play 1.5s steps(7) infinite;
+  }
+  @keyframes play {
+    100% {background-position:-3500px;}
+  }
+  .showcase-item-photo > p{
+    height: 3rem;
+  }
+}
+/* Phone */
+@media (max-width: 463px){
+  #navul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navul li{
+    padding: 5px 1rem;
+  }
+
+  .Sprite {
+    width: 250px;
+    height: 250px;
+    background-size: 1750px 250px;
+    animation: play 1.5s steps(7) infinite;
+  }
+
+  @keyframes play {
+    0%{background-position:0px;}
+    100% {background-position:-1750px;}
+  }
+  .showcase-item-photo > p{
+    height: 4rem;
+  }
+}
